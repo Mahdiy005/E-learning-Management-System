@@ -1,0 +1,27 @@
+----<><><><>Folders Structure <><><><>----
+1- Core Folde ->> this will contains all our framework specific code 'Logic', and will contains 
+    - `Controller.php` => contains all our controllers that we will create
+    - `Database.php`   => this will resposible for connecting to DB and execute query 
+    - `Model.php`      => responsible for all Models that we will create 
+    - `View.php`       => responsible for all page that interact with users
+    - `Router.php`     => that handle routres is directed
+    - 'functions.php'  => contains all helper function and i will created that my application need 
+    - `App.php`        => responsible for bootstrap our app , and run it , consider the entry point
+
+2- app Folder ->> this folder contains all classes of MVC , such all controllers and all Views classess
+    - Controllers Folder => all controller classes
+    - Models Folder      => all Models classes that responsible for interact with DB
+    - Views Folder       => all Views classes
+
+3- config Folder ->> contains all of our application configuration, contains
+    - app.php        => contians general application settings , like app name , app url, debug mode
+    - database.php   => contains The Basic credentials of the database such DB_NAME, DB_PASSWORD, ...
+
+4- public Folder ->> is the root of our application in this folder will create two files
+    - index.php  => entry point of our application, , and responsible for load and auto-load files and
+    initialize App classes
+    - .htaccess  => that contains configuration that will make all request redirect to index.php, to ensure
+    all request are handled by application
+
+5- routes Folder ->> this folder contains all of our application routes that defining and mapping URL to 
+    controle access
